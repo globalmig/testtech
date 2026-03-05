@@ -1,50 +1,50 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 
-const products = [
+const services = [
   {
-    title: "GAS 소화설비",
-    desc: "밀폐 방호구역 화재 진압에 특화된 가스계 소화설비 솔루션",
+    title: "상가 전기공사",
+    desc: "신규 입점, 리모델링, 증설 공사에 맞춰 분전반, 배선, 조명, 콘센트, 동력 라인을 안전 기준에 맞게 시공합니다.",
     image: "/images/visual/fire-system.svg",
   },
   {
-    title: "특수감지기",
-    desc: "공기흡입형 감지 시스템으로 화재를 조기에 탐지하고 대응",
+    title: "아파트 전기공사",
+    desc: "세대 내부 배선 교체, 누전 점검, 차단기 교체, LED 조명 교체까지 주거 환경에 최적화된 전기공사를 제공합니다.",
     image: "/images/visual/electric-control.svg",
   },
   {
-    title: "소방기계/전기",
-    desc: "기계 설비와 전기 제어를 통합해 현장 안정성 강화",
+    title: "오피스/공장 전기설비",
+    desc: "부하 분석을 기반으로 전력 분배를 최적화하고, 설비 안정성을 높이는 전기설비 구축 및 개선 공사를 수행합니다.",
     image: "/images/visual/fire-electric-hero.svg",
   },
   {
-    title: "소방 유지보수",
-    desc: "정기 점검과 장애 대응으로 설비 성능을 지속 관리",
+    title: "유지보수 및 긴급출동",
+    desc: "정기 점검과 예방 정비로 고장을 줄이고, 긴급 장애 발생 시 신속 대응으로 운영 중단 시간을 최소화합니다.",
     image: "/images/visual/fire-system.svg",
   },
 ];
 
 const performance = [
   {
-    name: "물류센터 소방전기 개선",
-    detail: "경보 회로 재구성 및 제어반 연동 최적화",
+    name: "상가 분전반 교체 및 증설 공사",
+    detail: "노후 분전반 교체, 차단기 용량 조정, 회로 분리로 전기 안전성과 운영 안정성을 개선했습니다.",
     year: "2026",
   },
   {
-    name: "오피스 빌딩 소방설비 보강",
-    detail: "스프링클러 배관 교체와 감지기 증설",
+    name: "아파트 공용부 LED 교체 공사",
+    detail: "복도/주차장 조명 교체와 제어 방식 개선으로 에너지 사용량을 절감했습니다.",
     year: "2025",
   },
   {
-    name: "공장동 자동소화장치 구축",
-    detail: "가스식 자동소화장치 설치 및 시험운전 완료",
+    name: "공장 동력 배선 정비 공사",
+    detail: "생산 라인 부하 재배치와 배선 정비로 설비 트립 발생률을 낮췄습니다.",
     year: "2025",
   },
 ];
 
 const notices = [
-  { title: "2026년 상반기 정기 점검 접수 안내", date: "2026-03-03" },
-  { title: "전기 제어반 교체 공사 프로세스 업데이트", date: "2026-02-20" },
-  { title: "소방시설 유지보수 긴급 대응 체계 운영", date: "2026-02-07" },
+  { title: "2026년 상반기 전기안전 점검 접수 안내", date: "2026-03-03" },
+  { title: "상가·아파트 전기공사 상담 예약 운영", date: "2026-02-20" },
+  { title: "긴급출동 대응 프로세스 개편 안내", date: "2026-02-07" },
 ];
 
 export default function Home() {
@@ -52,13 +52,13 @@ export default function Home() {
     <div className="min-h-screen bg-white text-[#111827]">
       <header className="fixed inset-x-0 top-0 z-50 border-b border-white/20 bg-[#0a2f6c]/80 backdrop-blur">
         <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-4 sm:px-6">
-          <strong className="font-heading text-lg text-white">JINYANG F&S</strong>
+          <strong className="font-heading text-lg text-white">JINYANG ELECTRIC</strong>
           <nav className="hidden items-center gap-7 text-sm text-white/90 md:flex">
             <a href="#company" className="hover:text-white">
               회사소개
             </a>
-            <a href="#products" className="hover:text-white">
-              소방시설
+            <a href="#services" className="hover:text-white">
+              주요공사
             </a>
             <a href="#performance" className="hover:text-white">
               공사실적
@@ -67,7 +67,7 @@ export default function Home() {
               온라인상담
             </a>
             <a href="#notice" className="hover:text-white">
-              고객지원
+              공지사항
             </a>
           </nav>
         </div>
@@ -82,14 +82,15 @@ export default function Home() {
 
           <div className="relative mx-auto flex min-h-[calc(100svh-64px)] w-full max-w-6xl items-center px-4 sm:px-6">
             <div className="max-w-4xl text-white">
-              <p className="font-heading text-sm tracking-[0.2em] text-white/85">JINYANG FIRE &amp; SYSTEM SOLUTION</p>
+              <p className="font-heading text-sm tracking-[0.2em] text-white/85">ELECTRICAL CONSTRUCTION PARTNER</p>
               <h1 className="font-heading mt-6 text-4xl leading-[1.05] font-extrabold sm:text-6xl lg:text-7xl">
-                안전, 정보관리 솔루션으로
+                전기공사를 주업으로
                 <br />
-                현장의 신뢰를 완성합니다
+                상가·아파트·산업시설을 책임 시공합니다
               </h1>
               <p className="mt-7 max-w-3xl text-base leading-7 text-white/90 sm:text-lg">
-                높은 기술력과 안정성을 기반으로 소방 및 전기 설비를 통합 관리하고, 설계부터 유지보수까지 책임지는 서비스를 제공합니다.
+                설계 검토부터 시공, 점검, 유지보수까지 한 번에 제공합니다. 현장 조건과 예산에 맞춘 안전하고 효율적인 전기공사로
+                안정적인 운영을 지원합니다.
               </p>
             </div>
           </div>
@@ -102,20 +103,20 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="products" className="mx-auto w-full max-w-6xl px-4 py-20 sm:px-6">
-          <h2 className="font-heading text-center text-4xl font-bold text-black">소방시설</h2>
-          <p className="mt-2 text-center text-lg font-light text-[#666]">진양 에프엔에스의 소방시설을 소개합니다.</p>
+        <section id="services" className="mx-auto w-full max-w-6xl px-4 py-20 sm:px-6">
+          <h2 className="font-heading text-center text-4xl font-bold text-black">주요 전기공사</h2>
+          <p className="mt-2 text-center text-lg font-light text-[#666]">상가, 아파트, 오피스, 공장 등 다양한 현장을 시공합니다.</p>
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
-            {products.map((product) => (
-              <article key={product.title} className="group relative h-[430px] overflow-hidden">
-                <Image src={product.image} alt={product.title} fill className="object-cover" sizes="(max-width: 1024px) 50vw, 25vw" />
+            {services.map((service) => (
+              <article key={service.title} className="group relative h-[430px] overflow-hidden">
+                <Image src={service.image} alt={service.title} fill className="object-cover" sizes="(max-width: 1024px) 50vw, 25vw" />
                 <div className="absolute inset-0 bg-[#0b2f67]/30 transition group-hover:bg-[#0b2f67]/80" />
                 <div className="absolute inset-x-0 bottom-7 px-5 text-center text-white transition group-hover:opacity-0">
-                  <p className="text-xl font-medium">{product.title}</p>
+                  <p className="text-xl font-medium">{service.title}</p>
                 </div>
                 <div className="absolute inset-0 flex flex-col justify-center px-7 text-white opacity-0 transition duration-500 group-hover:opacity-100">
-                  <h3 className="text-2xl font-semibold">{product.title}</h3>
-                  <p className="mt-5 text-sm leading-6 text-[#d6e4f8]">{product.desc}</p>
+                  <h3 className="text-2xl font-semibold">{service.title}</h3>
+                  <p className="mt-5 text-sm leading-6 text-[#d6e4f8]">{service.desc}</p>
                   <button className="font-heading mt-7 h-11 w-30 rounded-full border border-white text-sm">MORE</button>
                 </div>
               </article>
@@ -129,8 +130,11 @@ export default function Home() {
               <Image src="/images/visual/fire-electric-hero.svg" alt="회사 소개 비주얼" width={960} height={620} className="h-full w-full object-cover" />
             </div>
             <div className="rounded-2xl bg-white p-8 shadow-[0_14px_35px_rgba(15,47,90,0.14)]">
-              <h3 className="font-heading text-4xl font-extrabold text-[#003d91]">JINYANG F&amp;S</h3>
-              <p className="mt-5 text-base leading-8 text-[#2c3a4d]">진양에프엔에스는 안전관리와 정보관리 시스템을 바탕으로 고객 현장에 맞는 설계, 시공, 유지관리 서비스를 제공합니다.</p>
+              <h3 className="font-heading text-4xl font-extrabold text-[#003d91]">JINYANG ELECTRIC</h3>
+              <p className="mt-5 text-base leading-8 text-[#2c3a4d]">
+                진양전기는 전기공사 전문 업체로서 상가, 아파트, 오피스, 공장 등 다양한 시설의 전기설비를 설계 검토부터 시공,
+                사후관리까지 책임 수행합니다.
+              </p>
               <a href="#consult" className="font-heading mt-8 inline-flex h-12 items-center rounded-full bg-[#003d91] px-8 text-sm text-white">
                 VIEW MORE
               </a>
@@ -144,7 +148,7 @@ export default function Home() {
             <p className="mt-2 text-[#b8cff0]">최근 수행 프로젝트</p>
             <div className="mt-10 grid gap-4 md:grid-cols-3">
               {performance.map((item) => (
-                <article key={item.name} className="rounded-2xl border border-white/20 bg-white/5 p-6 py-20 text-white ">
+                <article key={item.name} className="rounded-2xl border border-white/20 bg-white/5 p-6 py-20 text-white">
                   <p className="font-heading text-sm text-[#8ec2ff]">{item.year}</p>
                   <h3 className="mt-2 text-xl font-semibold">{item.name}</h3>
                   <p className="mt-3 text-sm leading-6 text-white/80">{item.detail}</p>
@@ -159,14 +163,15 @@ export default function Home() {
             <div>
               <h2 className="font-heading text-4xl font-bold text-[#0f2f5a]">온라인 상담</h2>
               <p className="mt-4 max-w-2xl text-base leading-7 text-[#355077]">
-                소방 및 전기 설비 구축, 유지보수, 개선 공사까지 현장 조건에 맞는 상담을 도와드립니다. 문의 접수 후 담당자가 순차적으로 연락드립니다.
+                상가·아파트 전기공사, 유지보수, 긴급 복구까지 현장 상황에 맞춰 상담해드립니다. 문의 접수 후 담당 기술자가 빠르게
+                연락드립니다.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
                 <a href="#contact" className="font-heading inline-flex h-12 items-center rounded-full bg-[#003d91] px-7 text-sm text-white">
                   상담 접수하기
                 </a>
                 <a href="#notice" className="font-heading inline-flex h-12 items-center rounded-full border border-[#003d91] px-7 text-sm text-[#003d91]">
-                  자료 확인하기
+                  공지 확인하기
                 </a>
               </div>
             </div>
@@ -178,7 +183,7 @@ export default function Home() {
 
         <section id="notice" className="mx-auto w-full max-w-6xl px-4 py-20 sm:px-6">
           <div className="flex items-end justify-between border-b-2 border-black pb-4">
-            <h2 className="font-heading text-4xl font-bold">고객지원</h2>
+            <h2 className="font-heading text-4xl font-bold">공지사항</h2>
             <a href="#contact" className="text-sm text-[#555]">
               + 더보기
             </a>
@@ -199,13 +204,13 @@ export default function Home() {
 
       <footer id="contact" className="bg-[#0d1c2f] text-white">
         <div className="mx-auto w-full max-w-6xl px-4 py-12 sm:px-6">
-          <p className="font-heading text-2xl font-bold">진양에프엔에스(주)</p>
+          <p className="font-heading text-2xl font-bold">진양전기 주식회사</p>
           <div className="mt-5 space-y-2 text-sm text-white/85">
-            <p>서울특별시 송파구 송이로 23, 2층(송파동, 효재빌딩)</p>
-            <p>대표자: 홍순선 | 사업자등록번호: 121-81-40292</p>
-            <p>고객센터: 02-431-0730 | 이메일: mail@jyfns.net</p>
+            <p>서울특별시 송파구 오금로 23, 2층</p>
+            <p>대표자: 홍길동 | 사업자등록번호: 121-81-40292</p>
+            <p>고객센터: 02-431-0730 | 이메일: mail@jinyangelectric.co.kr</p>
           </div>
-          <p className="mt-7 text-xs text-white/60">Copyright 진양에프엔에스(주) All Rights Reserved</p>
+          <p className="mt-7 text-xs text-white/60">Copyright 진양전기 주식회사 All Rights Reserved</p>
         </div>
       </footer>
     </div>
